@@ -3,38 +3,46 @@
   src: url("assets/font/CircularStd-Light.otf");
   font-weight: 300;
 }
+
 @font-face {
   font-family: 'Circular';
   src: url("assets/font/CircularStd-Book.otf");
   font-weight: 400;
 }
+
 @font-face {
   font-family: 'Circular';
   src: url("assets/font/CircularStd-Medium.otf");
   font-weight: 500;
 }
+
 @font-face {
   font-family: 'Circular';
   src: url("assets/font/CircularStd-Bold.otf");
   font-weight: 600;
 }
+
 body {
   font-family: 'Circular';
 }
+
 .navbar-brand {
   font-weight: 600;
   font-size: 35px;
   transition: .6s;
+
   &:hover {
     transform: scale(0.9);
   }
 }
+
 .nav-link {
   padding-bottom: 2px;
   font-size: 22px;
   margin-right: 30px !important;
   color: black !important;
   position: relative;
+
   &::after {
     content: "";
     border-bottom: solid 2px black;
@@ -46,6 +54,7 @@ body {
     transform-origin: right;
     transition: transform 0.25s;
   }
+
   &:hover {
     &::after {
       transform-origin: left;
@@ -62,20 +71,24 @@ body {
     }
   }
 }
+
 .navbar {
   padding-bottom: 10px;
   border-bottom: 1px solid black;
 }
+
 .hero_header {
   line-height: 120%;
   font-weight: 600;
   font-size: 74px;
 }
+
 .hero_sub {
   margin-top: 15px;
   font-size: 45px;
   margin-bottom: 20px;
 }
+
 .hero_link {
   color: #006ddb;
   font-size: 32px;
@@ -83,6 +96,7 @@ body {
   font-weight: 600;
   position: relative;
   padding-bottom: 10px;
+
   &::after {
     content: "";
     border-bottom: solid 5px #006ddb;
@@ -94,6 +108,7 @@ body {
     transform-origin: right;
     transition: transform 0.25s;
   }
+
   &:hover {
     &::after {
       transform-origin: left;
@@ -110,28 +125,33 @@ body {
     }
   }
 }
+
 .about_section {
   margin-top: 50px;
   background: #f5f5f7;
   padding-top: 30px;
   padding-bottom: 30px;
 }
+
 .about_card {
   h3 {
     font-size: 30px;
     font-weight: 600;
     margin-bottom: 20px;
   }
+
   p {
     font-size: 22px;
     opacity: .75;
     margin-bottom: 0;
   }
+
   padding: 50px;
   background: #fff;
-  border: 1px solid hsla(0,0%,51.4%,.16);
+  border: 1px solid hsla(0, 0%, 51.4%, .16);
   border-radius: 28px;
 }
+
 .tech_card {
   margin-bottom: 7%;
   height: 30%;
@@ -140,14 +160,21 @@ body {
   justify-content: center;
   align-items: center;
   background: #fff;
-  border: 1px solid hsla(0,0%,51.4%,.16);
+  border: 1px solid hsla(0, 0%, 51.4%, .16);
   border-radius: 28px;
   transition: .4s;
+
   &:hover {
     transform: translateY(-5px);
   }
 }
+
 .projects_section {
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
   h3 {
     margin-top: 46px;
     font-weight: 600;
@@ -155,39 +182,53 @@ body {
     margin-bottom: 40px;
   }
 }
+
 .project_card {
   &:hover {
     img {
       transform: scale(1.1);
     }
   }
+
   figure {
     overflow: hidden;
   }
+
   img {
     border-radius: 10px;
     transition: .8s;
   }
+
   cursor: pointer;
   margin-bottom: 80px;
+
   h3 {
     font-size: 24px;
   }
 }
+
 .links_section {
   a {
     text-decoration: none;
   }
+
   padding-top: 46px;
-  height: 100vh;
+  padding-bottom: 46px;
   background: black;
+
   h3 {
     color: white;
     font-weight: 600;
     font-size: 46px;
     margin-bottom: 40px;
   }
+
   .link {
+    &:hover {
+      padding-right: 20px;
+    }
+
+    transition: .9s;
     color: black;
     font-weight: 500;
     font-size: 20px;
@@ -197,10 +238,12 @@ body {
     padding: 20px 36px;
     background: #fff;
     margin-bottom: 20px;
+
     .arrow {
       margin-left: auto;
     }
   }
+
   .link_card {
     width: 100%;
     height: 46px;
@@ -211,6 +254,53 @@ body {
     cursor: pointer;
   }
 }
+
 .link_i {
   margin-right: 20px;
+}
+
+@keyframes load {
+  0%{
+    opacity: 0.08;
+    /*         font-size: 10px; */
+    /* 				font-weight: 400; */
+    filter: blur(5px);
+    letter-spacing: 3px;
+  }
+  100%{
+    /*         opacity: 1; */
+    /*         font-size: 12px; */
+    /* 				font-weight:600; */
+    /* 				filter: blur(0); */
+  }
+}
+
+.animate {
+  color: black;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height:100%;
+  font-weight: 600;
+  margin: auto;
+  /* 	width: 350px; */
+  /* 	font-size:26px; */
+  animation: load 1.2s infinite 0s ease-in-out;
+  animation-direction: alternate;
+  text-shadow: 0 0 1px white;
+}
+.loader {
+  height: 100vh;
+  position: fixed;
+  background: white;
+  width: 100vw;
+  z-index: 10;
+}
+footer {
+  font-size: 18px;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  color: white;
+  background: black;
 }

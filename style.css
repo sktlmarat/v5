@@ -151,6 +151,10 @@ body {
   transform: translateY(-5px);
 }
 
+.projects_section a {
+  text-decoration: none;
+  color: black;
+}
 .projects_section h3 {
   margin-top: 46px;
   font-weight: 600;
@@ -178,7 +182,7 @@ body {
 
 .links_section {
   padding-top: 46px;
-  height: 100vh;
+  padding-bottom: 46px;
   background: black;
 }
 .links_section a {
@@ -191,6 +195,7 @@ body {
   margin-bottom: 40px;
 }
 .links_section .link {
+  transition: 0.9s;
   color: black;
   font-weight: 500;
   font-size: 20px;
@@ -200,6 +205,9 @@ body {
   padding: 20px 36px;
   background: #fff;
   margin-bottom: 20px;
+}
+.links_section .link:hover {
+  padding-right: 20px;
 }
 .links_section .link .arrow {
   margin-left: auto;
@@ -216,6 +224,53 @@ body {
 
 .link_i {
   margin-right: 20px;
+}
+
+@keyframes load {
+  0% {
+    opacity: 0.08;
+    /*         font-size: 10px; */
+    /* 				font-weight: 400; */
+    filter: blur(5px);
+    letter-spacing: 3px;
+  }
+  100% {
+    /*         opacity: 1; */
+    /*         font-size: 12px; */
+    /* 				font-weight:600; */
+    /* 				filter: blur(0); */
+  }
+}
+.animate {
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-weight: 600;
+  margin: auto;
+  /* 	width: 350px; */
+  /* 	font-size:26px; */
+  animation: load 1.2s infinite 0s ease-in-out;
+  animation-direction: alternate;
+  text-shadow: 0 0 1px white;
+}
+
+.loader {
+  height: 100vh;
+  position: fixed;
+  background: white;
+  width: 100vw;
+  z-index: 10;
+}
+
+footer {
+  font-size: 18px;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  color: white;
+  background: black;
 }
 
 /*# sourceMappingURL=style.css.map */
