@@ -151,9 +151,6 @@ body {
   transform: translateY(-5px);
 }
 
-.projects_section {
-  height: 100vh;
-}
 .projects_section h3 {
   margin-top: 46px;
   font-weight: 600;
@@ -163,15 +160,62 @@ body {
 
 .project_card {
   cursor: pointer;
+  margin-bottom: 80px;
+}
+.project_card:hover img {
+  transform: scale(1.1);
 }
 .project_card figure {
   overflow: hidden;
 }
 .project_card img {
   border-radius: 10px;
+  transition: 0.8s;
 }
 .project_card h3 {
   font-size: 24px;
+}
+
+.links_section {
+  padding-top: 46px;
+  height: 100vh;
+  background: black;
+}
+.links_section a {
+  text-decoration: none;
+}
+.links_section h3 {
+  color: white;
+  font-weight: 600;
+  font-size: 46px;
+  margin-bottom: 40px;
+}
+.links_section .link {
+  color: black;
+  font-weight: 500;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 20px 36px;
+  background: #fff;
+  margin-bottom: 20px;
+}
+.links_section .link .arrow {
+  margin-left: auto;
+}
+.links_section .link_card {
+  width: 100%;
+  height: 46px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.link_i {
+  margin-right: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

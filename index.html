@@ -6,6 +6,7 @@
           integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="assets/hero-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Portfolio v5</title>
 </head>
 <body>
@@ -55,7 +56,7 @@
     <div class="container">
         <div class="row">
             <div class="col-6">
-                <div class="about_card">
+                <div class="about_card" data-aos="fade-up">
                     <h3>Passionate Full Stack Developer</h3>
                     <p>Hi! My name is Marat. I have 3+ years of experience in web development and recently graduated
                         Nazarbayev University with a Computer Science Degree.
@@ -67,24 +68,24 @@
                 </div>
             </div>
             <div class="col-3">
-                <div class="tech_card">
+                <div class="tech_card" data-aos="fade-up">
                     <img src="assets/vue-logo-wide.png" height="100px" alt="">
                 </div>
-                <div class="tech_card">
+                <div class="tech_card" data-aos="fade-up">
                     <img src="assets/quasar.svg" height="80px" alt="">
                 </div>
-                <div class="tech_card">
+                <div class="tech_card" data-aos="fade-up">
                     <img src="assets/mysql.jpg" height="120px" alt="">
                 </div>
             </div>
             <div class="col-3">
-                <div class="tech_card">
+                <div class="tech_card" data-aos="fade-up">
                     <img src="assets/laravel-framework_1.png" height="100px" alt="">
                 </div>
-                <div class="tech_card">
+                <div class="tech_card" data-aos="fade-up">
                     <img src="assets/sass.png" height="100px" alt="">
                 </div>
-                <div class="tech_card">
+                <div class="tech_card" data-aos="fade-up">
                     <img src="assets/grqphql.png" height="90px" alt="">
                 </div>
             </div>
@@ -95,15 +96,53 @@
     <div class="container">
         <h3>Projects</h3>
         <div class="row">
-            <div class="col-6">
-                <div class="project_card">
+            <div class="col-6" style="padding-right: 40px">
+                <div class="project_card" data-aos-offset="300" data-aos="fade-right" data-aos-duration="800">
                     <figure>
                         <img src="assets/Mechta.png" width="100%" alt="">
                     </figure>
                     <h3>Mechta.kz (Part of the Dev Team) <img width="32px" style="margin-left: 10px" src="assets/right-arrows.png" alt=""></h3>
                 </div>
+                <div class="project_card" data-aos-offset="300" data-aos="fade-right" data-aos-duration="800">
+                    <figure>
+                        <img src="assets/Flotrack.png" width="100%" alt="">
+                    </figure>
+                    <h3>Flowtrack - Web Designer (Part of the Dev Team) <img width="32px" style="margin-left: 10px" src="assets/right-arrows.png" alt=""></h3>
+                </div>
             </div>
-            <div class="col-6"></div>
+            <div class="col-6" style="padding-left: 40px; padding-top: 100px">
+                <div class="project_card" data-aos-offset="300" data-aos="fade-left" data-aos-duration="800">
+                    <figure>
+                        <img src="assets/Monica.png" width="100%" alt="">
+                    </figure>
+                    <h3>Monica (Open Source Contributor) <img width="32px" style="margin-left: 10px" src="assets/right-arrows.png" alt=""></h3>
+                </div>
+                <div class="project_card" data-aos="fade-left" data-aos-offset="300" data-aos-duration="800">
+                    <figure>
+                        <img src="assets/tct.png" width="100%" alt="">
+                    </figure>
+                    <h3>Trust Me.kz (Part of the Dev Team) <img width="32px" style="margin-left: 10px" src="assets/right-arrows.png" alt=""></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="links_section">
+    <div class="container">
+        <h3>Links</h3>
+        <div class="row">
+            <div class="col-7">
+                <a href="" class="link" data-aos="">
+                    <img class="link_i" src="assets/github.jpg" height="50px" alt="">
+                    GitHub
+                    <img class="arrow" src="assets/right-arrows.png" width="25px" alt="">
+                </a>
+
+                <a href="" class="link" data-aos="">
+                    <img class="link_i" src="assets/linkedin.png" height="50px" alt="">
+                    <img class="arrow" src="assets/right-arrows.png" width="25px" alt="">
+                </a>
+            </div>
         </div>
     </div>
 </div>
@@ -111,5 +150,9 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init()
+</script>
 </body>
 </html>
